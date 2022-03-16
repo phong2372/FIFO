@@ -10,7 +10,7 @@ module counter(
 	wire [N-1:0] tmpd,tmpci;
 	
 	ha h[N-1:0](
-   .ha_cinext({tmpci[N-1:0]}),
+   	.ha_cinext({tmpci[N-1:0]}),
 	.ha_di({tmpd[N-1:0]}),
 	.ha_qi({ct_q[N-1:0]}),
 	.ha_ci({tmpci[N-2:0],ct_e})
